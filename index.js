@@ -1,7 +1,6 @@
 function displayAPIInfo() {
     // Access the info div
     const infoDiv = document.getElementById('card-container');
-    console.log(infoDiv)
   
     // API endpoint
     const url = 'https://rickandmortyapi.com/api/character';
