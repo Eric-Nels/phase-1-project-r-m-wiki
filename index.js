@@ -17,6 +17,17 @@ function displayAPIInfo() {
         data.results.forEach(item => {
           const card = document.createElement('div');
           card.classList.add('card');
+          console.log(item)
+
+          const imgCard = document.createElement('div');
+          imgCard.classList.add('imgCard')
+
+          const hiddenText = document.createElement('ul')
+          hiddenText.textContent = [
+            item.status,
+            item.gender,
+            item.origin.name
+          ]
   
           // Create an image element and set its src attribute
           const img = document.createElement('img');
@@ -31,13 +42,33 @@ function displayAPIInfo() {
           const paragraph = document.createElement('p');
           paragraph.textContent = item.species;
 
+         /* img.addEventListener('mouseover', () => {
+            // Fetch additional information from the API
+            const popOverUrl = item.url;
+            fetch(popOverUrl)
+              .then(response => response.json())
+              .then(popOverData => {
+                // Create a tooltip element and set its text content
+                const popOver = document.createElement('div');
+                popOver.classList.add('popOver');
+                popOver.textContent = `Gender: ${popOverData.gender}, Status: ${popOverData.status}`;
+  
+                // Add the tooltip to the card
+                card.appendChild(popOver);
+              })
+              .catch(error => console.error(error));
+          });
+          */
+
           // Create a like button element and set its text content
         const likeButton = document.createElement('button');
         likeButton.classList.add('like-button');
         likeButton.textContent = 'Like';
   
           // Append the image, heading, and paragraph elements to the card
-          card.appendChild(img);
+          imgCard.appendChild(img);
+          imgCard.appendChild(hiddenText);
+          card.appendChild(imgCard);
           card.appendChild(heading);
           card.appendChild(paragraph);
           card.appendChild(likeButton);
