@@ -22,12 +22,13 @@ function displayAPIInfo() {
           const imgCard = document.createElement('div');
           imgCard.classList.add('imgCard')
 
-          const hiddenText = document.createElement('ul')
+          const hiddenText = document.createElement('ul');
+          hiddenText.classList.add('hidden-text');
           hiddenText.textContent = [
             item.status,
             item.gender,
             item.origin.name
-          ]
+          ];
   
           // Create an image element and set its src attribute
           const img = document.createElement('img');
