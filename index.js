@@ -30,11 +30,17 @@ function displayAPIInfo() {
           // Create a paragraph element and set its text content
           const paragraph = document.createElement('p');
           paragraph.textContent = item.species;
+
+          // Create a like button element and set its text content
+        const likeButton = document.createElement('button');
+        likeButton.classList.add('like-button');
+        likeButton.textContent = 'Like';
   
           // Append the image, heading, and paragraph elements to the card
           card.appendChild(img);
           card.appendChild(heading);
           card.appendChild(paragraph);
+          card.appendChild(likeButton);
   
           // Append the card to the container
           container.appendChild(card);
