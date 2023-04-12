@@ -1,3 +1,11 @@
+const humanCheck = document.getElementById('human');
+const alienCheck = document.getElementById('alien');
+
+
+
+
+
+
 function displayAPIInfo() {
     // Access the info div
     const infoDiv = document.getElementById('card-container');
@@ -17,7 +25,6 @@ function displayAPIInfo() {
         data.results.forEach(item => {
           const card = document.createElement('div');
           card.classList.add('card');
-          console.log(item)
 
           const imgCard = document.createElement('div');
           imgCard.classList.add('imgCard')
