@@ -47,7 +47,9 @@ function displayAPIInfo() {
             img.style.opacity = 0;
           });
 
-
+          imgCard.addEventListener('mouseleave', () => {
+            img.style.opacity = 1;
+        });
 
           // Create a like button element and set its text content
         const likeButton = document.createElement('button');
