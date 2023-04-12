@@ -43,23 +43,11 @@ function displayAPIInfo() {
           const paragraph = document.createElement('p');
           paragraph.textContent = item.species;
 
-         /* img.addEventListener('mouseover', () => {
-            // Fetch additional information from the API
-            const popOverUrl = item.url;
-            fetch(popOverUrl)
-              .then(response => response.json())
-              .then(popOverData => {
-                // Create a tooltip element and set its text content
-                const popOver = document.createElement('div');
-                popOver.classList.add('popOver');
-                popOver.textContent = `Gender: ${popOverData.gender}, Status: ${popOverData.status}`;
-  
-                // Add the tooltip to the card
-                card.appendChild(popOver);
-              })
-              .catch(error => console.error(error));
+        imgCard.addEventListener('mouseover', () => {
+            img.style.opacity = 0;
           });
-          */
+
+
 
           // Create a like button element and set its text content
         const likeButton = document.createElement('button');
