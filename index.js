@@ -1,11 +1,3 @@
-const humanCheck = document.getElementById('human');
-const alienCheck = document.getElementById('alien');
-
-
-
-
-
-
 function displayAPIInfo() {
     // Access the info div
     const infoDiv = document.getElementById('card-container');
@@ -83,3 +75,25 @@ function displayAPIInfo() {
   
   // Call the displayAPIInfo function on page load
   window.addEventListener('load', displayAPIInfo);
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const humanCheck = document.getElementById('human');
+  const alienCheck = document.getElementById('alien');
+  
+  humanCheck.addEventListener('change', function() {
+    if (this.checked) {
+      console.log('Human checkbox is checked');
+    } else {
+      console.log('Human checkbox is unchecked');
+    }
+  });
+  
+  alienCheck.addEventListener('change', function() {
+    if (this.checked) {
+      console.log('Alien checkbox is checked');
+    } else {
+      console.log('Alien checkbox is unchecked');
+    }
+  });
+});
