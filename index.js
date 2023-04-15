@@ -65,12 +65,23 @@ function displayAPIInfo() {
                     heart.classList.toggle('filled'); // Toggle the filled class on the heart icon
                   });
 
+                imgCard.addEventListener('mouseover', () => {
+                    img.style.opacity = 0;
+                  });
+        
+        
+                imgCard.addEventListener('mouseleave', () => {
+                    img.style.opacity = 1;
+                });
+
                 // Append the card to the container
                 container.appendChild(card);
             });
 
             // Append the container to the info div
             infoDiv.appendChild(container);
+
+            
 
             // Add event listeners to the checkboxes
             const humanCheckbox = document.getElementById('human');
