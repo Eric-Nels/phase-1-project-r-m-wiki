@@ -138,7 +138,9 @@ function displayAPIInfo() {
                 card.appendChild(likeButton);
                 card.appendChild(heart);
 
-               
+                likeButton.addEventListener('click', () => {
+                    heart.classList.toggle('filled'); // Toggle the filled class on the heart icon
+                  });
 
                 // Append the card to the container
                 container.appendChild(card);
