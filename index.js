@@ -126,6 +126,9 @@ function displayAPIInfo() {
                 likeButton.classList.add('like-button');
                 likeButton.textContent = 'Like';
 
+                const heart = document.createElement('span');
+                heart.classList.add('heart-icon');
+
                 // Append the image, heading, and paragraph elements to the card
                 imgCard.appendChild(img);
                 imgCard.appendChild(hiddenText);
@@ -133,6 +136,9 @@ function displayAPIInfo() {
                 card.appendChild(heading);
                 card.appendChild(paragraph);
                 card.appendChild(likeButton);
+                card.appendChild(heart);
+
+               
 
                 // Append the card to the container
                 container.appendChild(card);
