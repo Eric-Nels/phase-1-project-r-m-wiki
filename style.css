@@ -10,6 +10,7 @@
   
 .filter-box {
     grid-area: filter; /* Assigns the filter box to the 'filter' area */
+    color:rgb(114, 225, 31)
   }
   
 .card-container {
@@ -71,3 +72,4 @@ body {
         font-size: 50px;
         text-align: center;
       }
+    
