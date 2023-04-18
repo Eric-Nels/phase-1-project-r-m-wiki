@@ -7,6 +7,14 @@
       "filter card card card"; /* Defines the layout of the grid */
     gap: 20px; /* Adds a 20px gap between each card */
   }
+
+@font-face {
+    font-family: 'get_schwiftyregular';
+    src: url('get_schwifty-webfont.woff2') format('woff2'),
+         url('get_schwifty-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
   
 .filter-box {
     grid-area: filter; /* Assigns the filter box to the 'filter' area */
@@ -22,7 +30,7 @@
 }
 
 h2 {
-    text-align: center;
+    text-align: center; 
 }
 
 p {
@@ -64,8 +72,10 @@ p {
       }
       
 .heart-icon.filled {
-        background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-noir-1.png)
+        background-image: url(https://static.vecteezy.com/system/resources/previews/008/573/909/original/red-heart-icon-for-web-and-app-vector.jpg);
+        background-size: 20px 20px;
       }
+
 
 body {
         background-color: aliceblue;
