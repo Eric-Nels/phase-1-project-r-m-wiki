@@ -25,11 +25,19 @@ function displayAPIInfo() {
                 //Create ul for hidden text and set its text content 
                 const hiddenText = document.createElement('ul');
                 hiddenText.classList.add('hidden-text');
-                hiddenText.textContent = [
-                    item.status,
-                    item.gender,
-                    item.origin.name
-                ];
+                const li1 = document.createElement('li');
+                li1.classList.add('status');
+                const li2 = document.createElement('li');
+                li2.classList.add('gender');
+                const li3 = document.createElement('li');
+                li3.classList.add('origin');
+                li1.textContent = item.status;
+                li2.textContent = item.gender;
+                li3.textContent = item.origin.name;
+                hiddenText.appendChild(li1);
+                hiddenText.appendChild(li2);
+                hiddenText.appendChild(li3); 
+        
 
                 // Create an image element and set its src attribute
                 const img = document.createElement('img');
