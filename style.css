@@ -26,11 +26,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: larger;
+    background-image: url(https://cdn.shopify.com/s/files/1/0321/9596/9069/collections/cartoon-network-portal.png?v=1588605085);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    font-size: x-large;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 150px;
     display: none;
   }
   
