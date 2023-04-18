@@ -17,6 +17,10 @@
     grid-area: card; /* Assigns the card container to the 'card' area */
   }
 
+.card {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .imgCard {
     position: relative;
   }
