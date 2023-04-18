@@ -38,11 +38,11 @@
 
     .heart-icon {
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 250px;
         width: 20px;
         height: 20px;
         background-image: url(https://pic.onlinewebfonts.com/svg/img_158584.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
       }
       
