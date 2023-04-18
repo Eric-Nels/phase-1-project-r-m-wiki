@@ -7,14 +7,6 @@
       "filter card card card"; /* Defines the layout of the grid */
     gap: 20px; /* Adds a 20px gap between each card */
   }
-
-@font-face {
-    font-family: 'get_schwiftyregular';
-    src: url('get_schwifty-webfont.woff2') format('woff2'),
-         url('get_schwifty-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
   
 .filter-box {
     grid-area: filter; /* Assigns the filter box to the 'filter' area */
