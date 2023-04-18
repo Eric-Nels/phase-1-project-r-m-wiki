@@ -21,6 +21,14 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 .imgCard {
     position: relative;
   }
