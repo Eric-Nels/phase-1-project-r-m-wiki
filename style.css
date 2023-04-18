@@ -8,19 +8,19 @@
     gap: 20px; /* Adds a 20px gap between each card */
   }
   
-  .filter-box {
+.filter-box {
     grid-area: filter; /* Assigns the filter box to the 'filter' area */
   }
   
-  .card-container {
+.card-container {
     grid-area: card; /* Assigns the card container to the 'card' area */
   }
 
-  .imgCard {
+.imgCard {
     position: relative;
   }
   
-  .hidden-text {
+.hidden-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,11 +32,11 @@
     display: none;
   }
   
-  .imgCard:hover .hidden-text {
+.imgCard:hover .hidden-text {
     display: block;
   }
 
-    .heart-icon {
+.heart-icon {
         display: inline-block;
         margin-left: 250px;
         width: 20px;
@@ -46,7 +46,28 @@
         background-repeat: no-repeat;
       }
       
-      .heart-icon.filled {
+.heart-icon.filled {
         background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-noir-1.png)
       }
 
+body {
+        background-color: aliceblue;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+#header_img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 50px; 
+      }
+      
+#h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -600%);
+        color: rgb(114, 225, 31);
+        font-size: 50px;
+        text-align: center;
+      }
