@@ -1,20 +1,20 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-areas: 
       "filter card card card"
       "filter card card card"
-      "filter card card card"; /* Defines the layout of the grid */
-    gap: 20px; /* Adds a 20px gap between each card */
+      "filter card card card"; 
+    gap: 20px; 
   }
   
 .filter-box {
-    grid-area: filter; /* Assigns the filter box to the 'filter' area */
+    grid-area: filter; 
     color:rgb(114, 225, 31)
   }
   
 .card-container {
-    grid-area: card; /* Assigns the card container to the 'card' area */
+    grid-area: card; 
   }
 
 .card {
