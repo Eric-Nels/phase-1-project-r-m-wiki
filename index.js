@@ -135,5 +135,5 @@ function displayAPIInfo() {
   };
 };
 
-// Call the displayAPIInfo function on page load
+//call displayAPIInfo function on page load
 window.addEventListener('load', displayAPIInfo);
